@@ -20,7 +20,6 @@ Execute the C Program for the desired output.
 # PROGRAM:
 
 ## 1.To Write a C program that illustrates files copying 
-
 ```
 #include <unistd.h>
 #include <sys/stat.h>
@@ -37,14 +36,13 @@ while((nread = read(in,block,sizeof(block))) > 0)
 write(out,block,nread);
 exit(0);}
 ```
-
-## OUTPUT:
-
-![WhatsApp Image 2024-04-27 at 10 14 24_5aae74a2](https://github.com/Johnydj123/Linux-File-IO-Systems-locking/assets/145953459/d64eca09-7429-4016-bea6-0e81dabd40e5)
+## OUTPUT
+```
+-rwxr-xr-x    1 root     root         18348 Apr 17 14:14 file.o
+```
 
 
 ## 2.To Write a C program that illustrates files locking
-
 ```
 #include <fcntl.h>
 #include <stdio.h>
@@ -83,16 +81,16 @@ getchar();
 close (fd);
 return 0;
 }
-
 ```
+
+
+
 ## OUTPUT
-
-
 ```
 -rwxr-xr-x    1 root     root         18376 Apr 17 14:20 text.o
 ```
 
 
-## RESULT:
 
+# RESULT:
 The programs are executed successfully.
